@@ -36,12 +36,11 @@ int main() {
     cin >> T;
 
     for(int test_case = 1; test_case <= T; test_case++){
-        for(int i = 1; i < 5; i++)
-            cin >> tickets[i];
-        for(int i = 1; i < 13; i++)
-            cin >> months[i];
+        for(int i = 1; i < 5; i++) cin >> tickets[i];
+        for(int i = 1; i < 13; i++) cin >> months[i];
         fill_n(dp, 13, 0);
         cout << "#" << test_case <<  " " << min(solutionRecur(12), tickets[4]) << endl;
+//        solutionIter();
 //        cout << "#" << test_case <<  " " << dp[12] << endl;
     }
     return 0;
